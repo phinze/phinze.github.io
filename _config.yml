@@ -1,4 +1,7 @@
 name: So create
+description: Paul Hinze writes stuff here
+url: http://phinze.github.io
+author: Paul Hinze
 markdown: redcarpet
 redcarpet:
   extensions: [smart]
