@@ -107,5 +107,6 @@ Whereas pairing encourages conversation as the point of construction, code revie
 
 So I hope I've shown that there's plenty that's good and plenty that's not so good about both pair programming and code review as code quality practices. Ultimately it's most important to have a team that is pragmatic about their particular choice of practices, because that will allow them to be honest about what's not working. And once you admit the weaknesses in your approach, you can start taking action to improve.
 
-So if you don't have one already, __find a team that cares about code and about process__ and you can try to solve some of these problems together. 
+So if you don't have one already, __find a team that cares about code and about process__ and you can try to solve some of these problems together.
 
+(I plan to write more about strategies for mitigating some of the specific problems I raised above in future posts.)

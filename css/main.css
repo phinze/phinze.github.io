@@ -61,9 +61,19 @@ a:visited { color: #4c57d8; }
   border-bottom: solid #f0f0f0 1px;
 }
 
+.title img {
+  vertical-align: -20%;
+  height: 1.2em;
+  padding: 0 0.2em;
+}
+
 .header a {
   font-weight: bold;
   text-decoration: none;
+}
+
+.clear {
+  clear: both;
 }
 
 .title a {
