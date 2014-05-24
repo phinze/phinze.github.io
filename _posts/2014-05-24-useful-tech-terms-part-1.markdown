@@ -124,15 +124,17 @@ http://en.wikipedia.org/wiki/Technical_debt) provides a good jumping off point.
 __Definition__: Spending disproportionate time and energy spent over an
 insignificant or unimportant detail of a larger concern.
 
-The term comes from the story of a committee discussing a plan to build a
-nuclear power plant. They spent the majority of their time arging over the
-color to paint the bikeshed in the back, because that was the part of the plan
-that everybody could understand.
+The term comes from an illustrative anecdote of a committee discussing a plan
+to build a nuclear power plant. In their meeting they spend the majority of
+their time arging over the color to paint the bikeshed in the back, because
+that was the part of the plan that everybody could understand.
 
 __Examples__: The phrase is normally used in a derogatory fashion:
 
-> "Did you hear the VP asking whether or not the app would use HTML5? Total
-> bikeshedding!"
+> "Did you hear the VPs spending like 10 minutes arguing whether or not the app
+> would use responsive design or adaptive design? It was clear that they were
+> both just trying to prove to the group that they understood those terms.
+> Total bikeshedding!"
 
 It's best when used in a constructive manner:
 
@@ -150,3 +152,9 @@ is incredibly valuable. This is one of them.
 __For more__: Start with [Parkinson's law of
 triviality](http://en.wikipedia.org/wiki/Parkinson's_law_of_triviality),
 the formalized name for the concept.
+
+----
+
+That's all for today. On deck for next time: Cargo Culting, Code Smell, and
+more! Feel free to suggest some be added to the list. I'm hoping over time to
+build up a relatively small list of unique phrases with high utility.
