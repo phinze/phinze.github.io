@@ -155,6 +155,7 @@ the formalized name for the concept.
 
 ----
 
-That's all for today. On deck for next time: Cargo Culting, Code Smell, and
-more! Feel free to suggest some for me to add. I'm hoping over time to build up
-a relatively small list of unique phrases with high utility.
+That's all for today. On deck for next time: Cargo Culting, Code Smell, Rubber
+Ducking, and maybe more! Feel free to suggest some for me to add. I'm hoping
+over time to build up a relatively small list of unique phrases with high
+utility.
