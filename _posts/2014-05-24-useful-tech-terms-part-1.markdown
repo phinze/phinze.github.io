@@ -146,3 +146,7 @@ understandable to more people have a tendency to be discussed more.
 
 It's so very difficult to do meetings well - so every tool we have to help us
 is incredibly valuable. This is one of them.
+
+__For more__: Start with [Parkinson's law of
+triviality](http://en.wikipedia.org/wiki/Parkinson's_law_of_triviality),
+the formalized name for the concept.
