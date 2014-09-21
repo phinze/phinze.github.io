@@ -2,7 +2,7 @@ name: "&ldquo;...so create&rdquo;"
 description: Paul Hinze writes stuff here
 url: http://phinze.github.io
 author: Paul Hinze
-markdown: redcarpet
-redcarpet:
-  extensions: [smart]
+markdown: kramdown
+kramdown:
+  input: GFM
 pygments: true
