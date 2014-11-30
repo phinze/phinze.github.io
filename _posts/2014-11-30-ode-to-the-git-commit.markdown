@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "An Ode to the Git Commit"
+date:   2014-11-30 00:00:00
 ---
 
 Trivial to perform. Instantaneous to complete. Immensely powerful. Deeply
