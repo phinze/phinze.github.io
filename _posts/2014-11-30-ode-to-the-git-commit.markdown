@@ -31,7 +31,7 @@ interacts with it. In all but the most exceptional of circumstances, you can
 rest assured that every commit you push to `master` will live on for the
 lifetime of the repository.
 
-And each commit is preserved perfectly, it its entirety, ready to be called up
+And each commit is preserved perfectly, in its entirety, ready to be called up
 at any time. There's no deterioration, no loss of fidelity over time. Your
 entry into history is permanent.
 
