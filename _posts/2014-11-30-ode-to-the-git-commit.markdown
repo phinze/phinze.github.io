@@ -9,9 +9,11 @@ meaningful.
 
 ## A perfect identifier
 
-Every time you commit, a SHA1 hash is generated. A single character change in your commit generates an entirely different SHA1. Moreso than any other kind of reference, your commit's hash deeply represents your changes. It's so much more than just a
-unique reference - it represents your change because it was generated _by_ your
-change.
+Every time you commit, a SHA1 hash is generated. A single character change in
+your commit generates an entirely different SHA1. Moreso than any other kind of
+reference, your commit's hash deeply represents your changes. It's so much more
+than just a unique reference - it represents your change because it was
+generated _by_ your change.
 
 The contents of your changes are only one part of the input to the hash
 function; a reference to the parent commit is also included. This means that
@@ -45,9 +47,9 @@ As if the above were not enough, we're given an amazing opportunity with every
 commit: an invitation to include a message.
 
 The ritual of making a commit includes a moment when the committer is presented
-with a blank space and asked simply to write. It is customary to describe the changes being made and
-explain the motivation for making them, but no constraints are imposed
-on this endeavor. 
+with a blank space and asked simply to write. It is customary to describe the
+changes being made and explain the motivation for making them, but no
+constraints are imposed on this endeavor.
 
 When this is done thoughtfully, it imbues every commit with a snapshot of the
 state of mind of the author at the time of authorship.
