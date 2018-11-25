@@ -1,9 +1,21 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<article class="h-entry">
+<h2 class="p-name">{{ page.title }}</h2>
+<p class="meta">
+  <a class="u-url" href="{{ page.url | relative_url }}">
+    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      {%- assign date_format = "%b %-d, %Y" -%}
+      {{ page.date | date: date_format }}
+    </time>
+  </a>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author | escape }}</span></span>
+{%- endif -%}</p>
+</p>
 
-<div class="post">
+
+<div class="post e-content">
 {{ content }}
 </div>

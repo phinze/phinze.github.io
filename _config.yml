@@ -1,8 +1,9 @@
 name: "&ldquo;...so create&rdquo;"
 description: Paul Hinze writes stuff here
-url: http://phinze.github.io
-author: Paul Hinze
-markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
+url: https://blog.phinze.com
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      author: "Paul Hinze"
