@@ -1,9 +1,12 @@
-name: "&ldquo;...so create&rdquo;"
+title: "&ldquo;...so create&rdquo;"
 description: Paul Hinze writes stuff here
-url: https://blog.phinze.com
+tagline: Paul Hinze writes stuff here
+url: https://phinze.blog
+theme: jekyll-theme-lanyon
 defaults:
   -
     scope:
       path: ""
     values:
       author: "Paul Hinze"
+      lang: "en"
