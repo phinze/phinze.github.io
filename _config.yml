@@ -2,8 +2,6 @@ title: "&ldquo;...so create&rdquo;"
 description: Paul Hinze writes stuff here
 tagline: Paul Hinze writes stuff here
 url: https://phinze.blog
-theme: jekyll-theme-lanyon
-remote_theme: poole/lanyon
 defaults:
   -
     scope:
