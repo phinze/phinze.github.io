@@ -1,0 +1,3 @@
+{% capture slides_id %}{{ include.id }}{% endcapture %}
+
+<script async class="speakerdeck-embed" data-id="{{ slides_id }}" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>

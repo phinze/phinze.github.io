@@ -1,3 +1,4 @@
+JEKYLL_IMAGE = jekyll/minimal
 JEKYLL_VERSION = 3.8
 SITE_NAME = $(shell basename $(CURDIR))
 
@@ -6,7 +7,7 @@ build: ## Run jekyll build
 	@docker run --rm \
 	  --volume="${PWD}:/srv/jekyll" \
     --volume="${PWD}/vendor/bundle:/usr/local/bundle" \
-		-it jekyll/jekyll:$(JEKYLL_VERSION) \
+		-it $(JEKYLL_IMAGE):$(JEKYLL_VERSION) \
 	  jekyll build
 
 .PHONY: serve
@@ -16,7 +17,7 @@ serve: ## Run jekyll serve
     --volume="${PWD}/vendor/bundle:/usr/local/bundle" \
 		--name=$(SITE_NAME) \
 		-P \
-		-it jekyll/jekyll:$(JEKYLL_VERSION) \
+		-it $(JEKYLL_IMAGE):$(JEKYLL_VERSION) \
 	  jekyll serve
 
 
@@ -31,7 +32,7 @@ bundle: ## Run bundle command (set with CMD)
 	@docker run --rm \
 	  --volume="${PWD}:/srv/jekyll" \
     --volume="${PWD}/vendor/bundle:/usr/local/bundle" \
-		-it jekyll/jekyll:$(JEKYLL_VERSION) \
+		-it $(JEKYLL_IMAGE):$(JEKYLL_VERSION) \
 	  bundle $(CMD)
 
 .PHONY: update
@@ -39,7 +40,7 @@ update: ## Run bundle update
 	@docker run --rm \
 	  --volume="${PWD}:/srv/jekyll" \
     --volume="${PWD}/vendor/bundle:/usr/local/bundle" \
-		-it jekyll/jekyll:$(JEKYLL_VERSION) \
+		-it $(JEKYLL_IMAGE):$(JEKYLL_VERSION) \
 	  bundle update
 
 .PHONY: help
