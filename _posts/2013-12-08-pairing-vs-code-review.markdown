@@ -1,8 +1,6 @@
 ---
 title:  "Pairing vs. Code Review: Comparing Developer Cultures"
 date:   2013-12-08 15:00:00
-classes: wide
-author_profile: false
 ---
 
 Between `last_job` and `current_job` I transitioned from a dev culture of pair programming to one of peer code review. It's been an interesting experience adjusting to the differences, and I thought I'd write down some of what I've noticed.
