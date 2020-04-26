@@ -8,12 +8,6 @@ open: ## Open web browser with URL from jekyll serve
 
 CMD?=help
 
-.PHONY: bundle
-bundle: ## Run bundle command (set with CMD, defaults to help)
-	@docker-compose run --rm \
-		jekyll \
-		bundle $(CMD)
-
 .PHONY: jekyll
 jekyll: ## Run jekyll command (set with CMD, defaults to help)
 	@docker-compose run --rm \
