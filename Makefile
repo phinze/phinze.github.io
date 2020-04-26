@@ -10,11 +10,15 @@ CMD?=help
 
 .PHONY: bundle
 bundle: ## Run bundle command (set with CMD, defaults to help)
-	@docker-compose run jekyll bundle $(CMD)
+	@docker-compose run --rm \
+		jekyll \
+		bundle $(CMD)
 
 .PHONY: jekyll
 jekyll: ## Run jekyll command (set with CMD, defaults to help)
-	@docker-compose run jekyll jekyll $(CMD)
+	@docker-compose run --rm \
+		jekyll \
+		jekyll $(CMD)
 
 .PHONY: help
 .DEFAULT_GOAL := help
