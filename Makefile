@@ -1,47 +1,20 @@
-JEKYLL_IMAGE = jekyll/minimal
-JEKYLL_VERSION = 3.8
-SITE_NAME = $(shell basename $(CURDIR))
-
-.PHONY: build
-build: ## Run jekyll build
-	@docker run --rm \
-		--volume="${PWD}:/srv/jekyll:cached" \
-		--volume="${PWD}/vendor/bundle:/usr/local/bundle:cached" \
-		-it $(JEKYLL_IMAGE):$(JEKYLL_VERSION) \
-	  jekyll build
-
 .PHONY: serve
 serve: ## Run jekyll serve
-	@docker run --rm \
-		--volume="${PWD}:/srv/jekyll:cached" \
-		--volume="${PWD}/vendor/bundle:/usr/local/bundle:cached" \
-		--name=$(SITE_NAME) \
-		-P \
-		-it $(JEKYLL_IMAGE):$(JEKYLL_VERSION) \
-	  jekyll serve
-
+	@docker-compose up
 
 .PHONY: open
 open: ## Open web browser with URL from jekyll serve
-	@open http://$(shell docker port $(SITE_NAME) 4000)
+	@open http://localhost:4000
 
 CMD?=help
 
 .PHONY: bundle
-bundle: ## Run bundle command (set with CMD)
-	@docker run --rm \
-		--volume="${PWD}:/srv/jekyll:cached" \
-		--volume="${PWD}/vendor/bundle:/usr/local/bundle:cached" \
-		-it $(JEKYLL_IMAGE):$(JEKYLL_VERSION) \
-	  bundle $(CMD)
+bundle: ## Run bundle command (set with CMD, defaults to help)
+	@docker-compose run jekyll bundle $(CMD)
 
 .PHONY: jekyll
-jekyll: ## Run bundle command (set with CMD)
-	@docker run --rm \
-		--volume="${PWD}:/srv/jekyll:cached" \
-		--volume="${PWD}/vendor/bundle:/usr/local/bundle:cached" \
-		-it $(JEKYLL_IMAGE):$(JEKYLL_VERSION) \
-	  jekyll $(CMD)
+jekyll: ## Run jekyll command (set with CMD, defaults to help)
+	@docker-compose run jekyll jekyll $(CMD)
 
 .PHONY: help
 .DEFAULT_GOAL := help

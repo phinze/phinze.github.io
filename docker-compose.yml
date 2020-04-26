@@ -1,0 +1,14 @@
+version: '3'
+
+volumes:
+  jekyll_gems:
+
+services:
+  jekyll:
+    image: jekyll/jekyll:3.8
+    command: jekyll serve --watch
+    ports:
+      - 4000:4000
+    volumes:
+      - .:/srv/jekyll
+      - jekyll_gems:/usr/local/bundle
