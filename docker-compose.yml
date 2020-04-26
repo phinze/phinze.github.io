@@ -2,6 +2,7 @@ version: '3'
 
 volumes:
   jekyll_gems:
+  jekyll_site:
 
 services:
   jekyll:
@@ -11,4 +12,5 @@ services:
       - 4000:4000
     volumes:
       - .:/srv/jekyll
+      - jekyll_site:/srv/jekyll/_site
       - jekyll_gems:/usr/local/bundle
