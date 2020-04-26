@@ -5,16 +5,16 @@ SITE_NAME = $(shell basename $(CURDIR))
 .PHONY: build
 build: ## Run jekyll build
 	@docker run --rm \
-	  --volume="${PWD}:/srv/jekyll" \
-    --volume="${PWD}/vendor/bundle:/usr/local/bundle" \
+		--volume="${PWD}:/srv/jekyll:cached" \
+		--volume="${PWD}/vendor/bundle:/usr/local/bundle:cached" \
 		-it $(JEKYLL_IMAGE):$(JEKYLL_VERSION) \
 	  jekyll build
 
 .PHONY: serve
 serve: ## Run jekyll serve
 	@docker run --rm \
-	  --volume="${PWD}:/srv/jekyll" \
-    --volume="${PWD}/vendor/bundle:/usr/local/bundle" \
+		--volume="${PWD}:/srv/jekyll:cached" \
+		--volume="${PWD}/vendor/bundle:/usr/local/bundle:cached" \
 		--name=$(SITE_NAME) \
 		-P \
 		-it $(JEKYLL_IMAGE):$(JEKYLL_VERSION) \
@@ -25,23 +25,23 @@ serve: ## Run jekyll serve
 open: ## Open web browser with URL from jekyll serve
 	@open http://$(shell docker port $(SITE_NAME) 4000)
 
-CMD?=install
+CMD?=help
 
 .PHONY: bundle
 bundle: ## Run bundle command (set with CMD)
 	@docker run --rm \
-	  --volume="${PWD}:/srv/jekyll" \
-    --volume="${PWD}/vendor/bundle:/usr/local/bundle" \
+		--volume="${PWD}:/srv/jekyll:cached" \
+		--volume="${PWD}/vendor/bundle:/usr/local/bundle:cached" \
 		-it $(JEKYLL_IMAGE):$(JEKYLL_VERSION) \
 	  bundle $(CMD)
 
-.PHONY: update
-update: ## Run bundle update
+.PHONY: jekyll
+jekyll: ## Run bundle command (set with CMD)
 	@docker run --rm \
-	  --volume="${PWD}:/srv/jekyll" \
-    --volume="${PWD}/vendor/bundle:/usr/local/bundle" \
+		--volume="${PWD}:/srv/jekyll:cached" \
+		--volume="${PWD}/vendor/bundle:/usr/local/bundle:cached" \
 		-it $(JEKYLL_IMAGE):$(JEKYLL_VERSION) \
-	  bundle update
+	  jekyll $(CMD)
 
 .PHONY: help
 .DEFAULT_GOAL := help
