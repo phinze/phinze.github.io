@@ -1,0 +1,156 @@
+---
+---
+
+$bg-color: #faf7ff;
+
+// Page Specific Stuff
+
+.intro {
+  h1 {
+    font-size: 6em;
+    margin-bottom: 0;
+
+    &:before {
+      $logo-width: 1.0em;
+      $logo-height: 1.0em;
+
+      content: " ";
+      display: inline-block;
+      background-image: url({{ "/assets/images/logo.png" | relative_url }});
+      background-size: $logo-width $logo-height;
+      margin-right: $logo-width / 4;
+      width: $logo-width;
+      height: $logo-height;
+    }
+  }
+
+  h2 {
+    font-style: normal;
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+  }
+
+  p {
+    font-size: 1.5em;
+    max-width: 40em;
+  }
+
+  img {
+    max-height: 2em;
+    object-fit: contain;
+  }
+}
+
+.speaking {
+  h2 {
+    font-size: 3em;
+    &:before {
+      $logo-height: 1.0em;
+      $logo-width: 1 * $logo-height; // tiger is square
+      content: " ";
+      display: inline-block;
+      background-image: url({{ "/assets/images/podium-tiger.png" | relative_url }});
+      background-size: $logo-width $logo-height;
+      margin-right: $logo-width / 4;
+      width: $logo-width;
+      height: $logo-height;
+    }
+  }
+}
+
+.writing {
+  article {
+    padding: 0; // porcupine kite flies into the white space, so we don't need padding
+  }
+
+  h2 {
+    font-size: 3em;
+    &:before {
+      $logo-height: 3.0em;
+      $logo-width: 0.5222 * $logo-height; // porcupine is 94x180, ratio of 0.5222
+      content: " ";
+      display: inline-block;
+      background-image: url({{ "/assets/images/kite-porcupine.png" | relative_url }});
+      background-size: $logo-width $logo-height;
+      margin-right: $logo-width / 4;
+      width: $logo-width;
+      height: $logo-height;
+    }
+  }
+}
+
+
+// Global Stuff
+
+// Since we're using dracula pygments theme, code blocks have a dark background
+// and therefore need more padding.
+pre.highlight > code {
+  padding: 1em 0 1em 1em;
+}
+
+// --- START NAV
+
+#burgerMenu {
+  width: 20rem;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  transition-timing-function: cubic-bezier(10,2,3,1);
+  transform: translateX(50rem);
+  top: 0;
+  z-index: 0;
+  transition: 0.5s;
+  padding-left: 1rem;
+  box-shadow: 0 -1rem 0.5em rgba(0, 0, 0, .2);
+
+  li {
+    padding: 1rem;
+    font-size: 2rem;
+    list-style: none;
+  }
+}
+
+#burgerCheck {
+    display: none;
+}
+
+#burgerCheck:checked ~ #burgerMenu {
+    transform: translateX(0rem);
+}
+
+#burger {
+    position: absolute;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    right: 2rem;
+    top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 999;
+}
+
+#burger > div {
+    height: 2px;
+    background-color: #000;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+#burgerCheck:checked ~ #burger > div {
+  background-color: #000;
+}
+
+#burgerCheck:checked ~ #burger > div:nth-child(1) {
+    transform: translateY(15px) rotate(45deg);
+}
+#burgerCheck:checked ~ #burger > div:nth-child(2) {
+    opacity: 0;
+}
+#burgerCheck:checked ~ #burger > div:nth-child(3) {
+    transform: translateY(-15px) rotate(-45deg);
+}
+
+// --- END NAV

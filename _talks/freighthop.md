@@ -19,4 +19,4 @@ Looking back on it, I think you could classify it as an early predecessor to
 
 It's the first lightning talk.
 
-{% include video id="aoLL0RiKkM0" provider="youtube" %}
+{% include video id="76294485" provider="vimeo" %}

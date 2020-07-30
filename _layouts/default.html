@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    <!-- prevent FOUC https://bugzilla.mozilla.org/show_bug.cgi?id=1404468https://stackoverflow.com/questions/21147149/flash-of-unstyled-content-fouc-in-firefox-only-is-ff-slow-renderer -->
+    <script>/**/</script>
+
+    {%- include header.html -%}
+
+    <main class="page-content {{ page.class }}" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+  </body>
+
+</html>
