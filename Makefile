@@ -6,13 +6,13 @@ serve: ## Run jekyll serve
 open: ## Open web browser with URL from jekyll serve
 	@open http://localhost:4000
 
-CMD?=help
+CMD?="jekyll help"
 
-.PHONY: jekyll
-jekyll: ## Run jekyll command (set with CMD, defaults to help)
+.PHONY: run
+run: ## Run command (set with CMD, defaults to jekyll help)
 	@docker-compose run --rm \
 		jekyll \
-		jekyll $(CMD)
+		$(CMD)
 
 .PHONY: help
 .DEFAULT_GOAL := help
