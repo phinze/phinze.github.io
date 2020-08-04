@@ -5,14 +5,16 @@ date:  2020-08-03
 listed: false
 ---
 
-Hello from the hospital, where I've been for the last three weeks. I'm in is what's known as a "hemonc" unit. "Hemonc" is short for "Hematology/Oncology." Translating those words to their colloquial equivalents you get:
+Hello from the hospital, where I've been for the last three weeks.
+
+I'm in what's known as a "hemonc" unit. "Hemonc" is short for "Hematology/Oncology." Translating those words to their colloquial equivalents you get:
 
  * Hematology = blood
  * Oncology = cancer
 
-Ok well this is not exactly sounding great, is it? Well let me tell you, dear reader: it is not! I am here because I have leukemia, and leukemia is decidedly not great.
+Hm well this is not exactly sounding great, is it? Let me tell you, dear reader: it is not! I am here because I have been diagnosed with leukemia, and leukemia is _decidedly not great_.
 
-Not everything about my current situation is bad though. In fact, there are actually buttloads of amazing and wonderful things that have come along with this One Very Bad Thing.
+Not everything about my current situation is bad though. There are in fact buttloads of amazing and wonderful things that have come along with this One Very Bad Thing.
 
 ## One Very Bad Thing
 
@@ -30,7 +32,7 @@ It is leukemia, and I have it.
 
 **There is so much to learn!** Once I got over the initial shock of the diagnosis, it quickly became clear that receiving weeks of inpatient cancer treatment at a teaching hospital is SYSTEMS NERD HEAVEN. The sum total of patient care requires massive coordination between an incredibly diverse set of actors: nurses, doctors, pharmacists, nutrition techs, maintenance techs, and more. I’ve gotten to witness (and ask annoying questions about) the protocols and practices of everyone around me. Endless fascination and awe! And this is before you even _get_ to the actual medical science, which presents its own libraries worth of knowledge to curious cancer cats like me.
 
-All of these things--the positive prognosis, the quality of the care, the support of my community, and the opportunity lean into curiosity--have been helping me to get through the scary bits of this nightmare and transform it into more of an adventure. But it's not a one way transformation; on any given day I could be flitting around anywhere on the nightmare/adventure spectrum. I've been lucky to be spending most of my time on the adventure side, but as a wise poet once said "every day is a winding road."
+All of these things--the positive prognosis, the quality of the care, the support of my community, and the opportunity lean into curiosity--have been helping me to get through the scary bits of this nightmare and transform it into more of an adventure. It's not a one way transformation--on any given day I could be flitting around anywhere on the nightmare/adventure spectrum--but I've been lucky to be spending the majority of my time on the adventure side.
 
 ## What next?
 
