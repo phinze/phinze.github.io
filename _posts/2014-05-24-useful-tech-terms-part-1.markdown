@@ -1,5 +1,6 @@
 ---
 title:  "Useful tech terms: Yak Shaving, Technical Debt, Bikeshedding"
+slug:   useful-tech-terms
 date:   2014-05-24 14:08:00
 ---
 

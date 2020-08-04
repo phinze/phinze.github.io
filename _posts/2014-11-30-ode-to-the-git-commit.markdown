@@ -1,5 +1,6 @@
 ---
 title: "An Ode to the Git Commit"
+slug:   ode-to-the-git-commmit
 date:   2014-11-30 00:00:00
 ---
 

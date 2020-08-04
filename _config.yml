@@ -25,7 +25,7 @@ defaults:
       type: posts
     values:
       layout: post
-      permalink: "/writing/:title"
+      permalink: "/writing/:slug"
       # filtered in writing.md
       # lets me set listed: false to unlist a post that i might want in
       # semi-draft or semi-private mode
@@ -36,14 +36,14 @@ defaults:
       type: talks
     values:
       layout: talk
-      permalink: "/speaking/:title"
+      permalink: "/speaking/:slug"
   # _projects
   - scope:
       path: ""
       type: projects
     values:
       layout: project
-      permalink: "/projects/:title"
+      permalink: "/projects/:slug"
 
 kramdown:
   input: GFM

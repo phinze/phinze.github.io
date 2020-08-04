@@ -1,5 +1,7 @@
 ---
-title:  "Sprucing up the Blog"
+title: "Sprucing up the Blog"
+slug:  sprucing-up
+date:  2020-04-26
 ---
 
 <label for="mn-update-prediction" class="margin-toggle">&#8853;</label>

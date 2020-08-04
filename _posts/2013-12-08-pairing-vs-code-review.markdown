@@ -1,5 +1,6 @@
 ---
 title:  "Pairing vs. Code Review: Comparing Developer Cultures"
+slug:   pairing-vs-code-review
 date:   2013-12-08 15:00:00
 ---
 
