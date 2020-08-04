@@ -11,7 +11,8 @@ remain hopeful that one day I'll be able to figure out a practice that gets me
 doing so regularly.
 
 <ul>
-  {%- for post in site.posts -%}
+  {% assign listed_posts = site.posts | where: "listed", "true" %}
+  {%- for post in listed_posts -%}
   <li>
     <em>{{ post.date | date: "%Y-%m-%d" }}</em>
     <a href="{{ post.url | relative_url }}">

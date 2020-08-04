@@ -26,6 +26,10 @@ defaults:
     values:
       layout: post
       permalink: "/writing/:title"
+      # filtered in writing.md
+      # lets me set listed: false to unlist a post that i might want in
+      # semi-draft or semi-private mode
+      listed: true
   # _talks
   - scope:
       path: ""
