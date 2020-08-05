@@ -11,6 +11,10 @@ talks to be quite challenging but quite rewarding. Writing a talk forces me to
 clarify my understanding of a given topic, and delivering it helps me connect
 with others by sharing that understanding.
 
+:construction: _(( under construction dot gif ))_ :construction:
+
+The below list is just an initial pass at gathering together a few slides and videos. More to come!
+
 <ul>
   {%- for talk in site.talks -%}
   <li>
@@ -21,3 +25,4 @@ with others by sharing that understanding.
   </li>
   {%- endfor -%}
 </ul>
+
