@@ -2,7 +2,6 @@
 title: "Diagnosis"
 slug:  diagnosis
 date:  2020-08-03
-listed: false
 ---
 
 Hello from the hospital, where I've been for the last three weeks.
@@ -28,7 +27,7 @@ It is leukemia, and I have it.
 
 **I am under excellent care.** The hospital I am in is one of the best in the country. I may be stuck in a hospital room, but for how nice this place is, it's really more like a high rise hotel room (_4 stars, great view, bed was a bit funky_). Everybody, from the doctors to the nurses to the techs to the staff, has been unequivocally good at their jobs and wonderful to me. I'm experiencing the very best that modern medicine has to offer. It's a massive privilege, and for me it's been a source of endless fascination and awe. (More on this last bit below.)
 
-**My community is supporting the crap out of me.** As I shared the news with the concentric circles of my people (family, friends, coworkers, and now you, dear reader!), I was consistently struck by this sense of _activation_ in all of the relationships of my life. It was like all of the implicit bonds that I have with others were suddenly made explicit as people declared their support, their solidarity, and their love for me in ways both verbal and nonverbal. Before this I don’t think would have reported having a strong sense of being rooted in a community, but I sure feel that way now, and I’m basking in it.
+**My community is supporting the crap out of me.** As I shared the news with the concentric circles of my people (family, friends, coworkers, and now you, dear reader!), I was consistently struck by this sense of _activation_ in all of the relationships of my life. It was like all of the implicit bonds that I have with others were suddenly made explicit as people declared their support, their solidarity, and their love for me in ways both verbal and nonverbal. Before this I don’t think I would have reported having a strong sense of being rooted in a community, but I sure feel that way now, and I’m basking in it.
 
 **There is so much to learn!** Once I got over the initial shock of the diagnosis, it quickly became clear that receiving weeks of inpatient cancer treatment at a teaching hospital is SYSTEMS NERD HEAVEN. The sum total of patient care requires massive coordination between an incredibly diverse set of actors: nurses, doctors, pharmacists, nutrition techs, maintenance techs, and more. I’ve gotten to witness (and ask annoying questions about) the protocols and practices of everyone around me. Endless fascination and awe! And this is before you even _get_ to the actual medical science, which presents its own libraries worth of knowledge to curious cancer cats like me.
 
