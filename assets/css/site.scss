@@ -103,6 +103,7 @@ pre.highlight > code {
   transition: 0.5s;
   padding-left: 1rem;
   box-shadow: 0 -1rem 0.5em rgba(0, 0, 0, .2);
+  background-color: $bg-color;
 
   li {
     padding: 1rem;
@@ -154,3 +155,9 @@ pre.highlight > code {
 }
 
 // --- END NAV
+
+
+// Fix emoji from getting stretched by tufte.css on narrow viewports
+img.emoji {
+  width: 20px;
+}
