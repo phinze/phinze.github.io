@@ -91,67 +91,27 @@ pre.highlight > code {
 
 // --- START NAV
 
-#burgerMenu {
-  width: 20rem;
-  height: 100vh;
-  position: fixed;
-  right: 0;
-  transition-timing-function: cubic-bezier(10,2,3,1);
-  transform: translateX(50rem);
-  top: 0;
-  z-index: 0;
-  transition: 0.5s;
-  padding-left: 1rem;
-  box-shadow: 0 -1rem 0.5em rgba(0, 0, 0, .2);
-  background-color: $bg-color;
+#footerMenu {
+  text-align: center;
+  padding: 0;
+}
 
-  li {
-    padding: 1rem;
-    font-size: 2rem;
-    list-style: none;
+#footerMenu ul {
+  margin: 0;
+}
+
+#footerMenu ul li {
+  list-style: none;
+  display: inline;
+
+  &:after {
+    content: "\00b7";
+    padding: 0 0.5em;
   }
-}
 
-#burgerCheck {
-    display: none;
-}
-
-#burgerCheck:checked ~ #burgerMenu {
-    transform: translateX(0rem);
-}
-
-#burger {
-    position: absolute;
-    cursor: pointer;
-    width: 2rem;
-    height: 2rem;
-    right: 2rem;
-    top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    z-index: 999;
-}
-
-#burger > div {
-    height: 2px;
-    background-color: #000;
-    transition: 0.5s;
-    z-index: 999;
-}
-
-#burgerCheck:checked ~ #burger > div {
-  background-color: #000;
-}
-
-#burgerCheck:checked ~ #burger > div:nth-child(1) {
-    transform: translateY(15px) rotate(45deg);
-}
-#burgerCheck:checked ~ #burger > div:nth-child(2) {
-    opacity: 0;
-}
-#burgerCheck:checked ~ #burger > div:nth-child(3) {
-    transform: translateY(-15px) rotate(-45deg);
+  &:last-child:after {
+    content: none;
+  }
 }
 
 // --- END NAV
