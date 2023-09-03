@@ -1,4 +1,5 @@
 ---
+layout: default
 title: index
 class: intro h-card
 ---
