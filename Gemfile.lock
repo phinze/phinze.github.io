@@ -119,6 +119,7 @@ GEM
       tzinfo (>= 1.0.0)
     unicode-display_width (1.8.0)
     verbal_expressions (0.1.5)
+    webrick (1.8.1)
 
 PLATFORMS
   ruby
@@ -134,6 +135,7 @@ DEPENDENCIES
   jemoji
   kramdown-parser-gfm
   tzinfo-data
+  webrick (~> 1.8)
 
 BUNDLED WITH
    2.3.25
