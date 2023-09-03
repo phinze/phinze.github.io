@@ -1,8 +1,9 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
+gem "jekyll", "~> 4.2.2"
 
-gem "activesupport", ">= 6.0.3.1"
+# kramdown v2 comes without the gfm parser
+gem "kramdown-parser-gfm"
 
 gem "tzinfo-data"
 
