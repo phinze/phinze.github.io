@@ -4,7 +4,7 @@ slug:  sprucing-up
 date:  2020-04-26
 ---
 
-I'm going to start trying to write more. I'm setting myself a modest goal of minimum one post per month for the next year. Let's see how we do. {% marginnote 'lolnope' '_**Update July 30th, 2020**: Why oh why do I ever make predictions about my posting frequency in writing?! :joy:_' %} For starters, let's do a classic and time-honored style of post - the "how this blog is set up" post.
+I'm going to start trying to write more. I'm setting myself a modest goal of minimum one post per month for the next year. Let's see how we do.[^1] For starters, let's do a classic and time-honored style of post - the "how this blog is set up" post.
 
 ## Before
 
@@ -142,9 +142,13 @@ so props to François for that!
 
 ## Next
 
-I'm pretty sure that this theme is not going to last long w/o some significant tweaks if not another theme shopping spree. {% marginnote 'theme' "_**Update July 30th, 2020**: In line with my prediction, I've already overhauled the theme to a custom one based on [tufte.css](https://edwardtufte.github.io/tufte-css/)._" %} Beyond that I want to continue making the talks section better and mostly just getting things settled in a way that I can find fewer excuses to futz with the site instead of just writing.
+I'm pretty sure that this theme is not going to last long w/o some significant tweaks if not another theme shopping spree.[^2] Beyond that I want to continue making the talks section better and mostly just getting things settled in a way that I can find fewer excuses to futz with the site instead of just writing.
 
 This thing is [all up on GitHub](https://github.com/phinze/phinze.github.io/)
 so feel free to poke around!
 
 Until next time.
+
+[^1]: _**Update July 30th, 2020**: Why oh why do I ever make predictions about my posting frequency in writing?! :joy:_
+
+[^2]: _**Update July 30th, 2020**: In line with my prediction, I've already overhauled the theme to a custom one based on [tufte.css](https://edwardtufte.github.io/tufte-css/)._

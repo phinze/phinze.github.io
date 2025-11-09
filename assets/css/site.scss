@@ -7,7 +7,7 @@ $bg-color: #faf7ff;
 
 .intro {
   h1 {
-    font-size: 6em;
+    font-size: 4.5em;
     margin-bottom: 0;
 
     &:before {
@@ -17,10 +17,15 @@ $bg-color: #faf7ff;
       content: " ";
       display: inline-block;
       background-image: url({{ "/assets/images/logo.png" | relative_url }});
-      background-size: $logo-width $logo-height;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
       margin-right: $logo-width / 4;
       width: $logo-width;
       height: $logo-height;
+      background-color: white;
+      border-radius: 0.1em;
+      padding: 0.1em;
     }
   }
 
@@ -51,10 +56,15 @@ $bg-color: #faf7ff;
       content: " ";
       display: inline-block;
       background-image: url({{ "/assets/images/podium-tiger.png" | relative_url }});
-      background-size: $logo-width $logo-height;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
       margin-right: $logo-width / 4;
       width: $logo-width;
       height: $logo-height;
+      background-color: white;
+      border-radius: 0.1em;
+      padding: 0.1em;
     }
   }
 }
@@ -72,10 +82,15 @@ $bg-color: #faf7ff;
       content: " ";
       display: inline-block;
       background-image: url({{ "/assets/images/kite-porcupine.png" | relative_url }});
-      background-size: $logo-width $logo-height;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
       margin-right: $logo-width / 4;
       width: $logo-width;
       height: $logo-height;
+      background-color: white;
+      border-radius: 0.1em;
+      padding: 0.1em;
     }
   }
 }
