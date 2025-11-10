@@ -1,20 +1,11 @@
 ---
 layout: default
 title: index
-class: intro h-card
+class: h-card
 ---
 
-# Hi! I'm <span class="p-name">Paul Hinze</span>.
-## Most places online, I go by <code title="&#147;FIN-zee&#148;">phinze</code>.
+<p>Most places online, I go by <code title="&#147;FIN-zee&#148;">phinze</code>.</p>
 
-Welcome to my home page. Here you can find:
+<p>This is my home page. You can find my <a href="/writing">writing</a>, <a href="/speaking">speaking</a>, and <a href="/projects">projects</a> here.</p>
 
- * my incredibly occasional [writing](/writing),
- * my slightly less occasional [speaking](/speaking), and
- * a bit about the [projects](/projects) I've been involved with over the years.
-
-Elsewhere on the web you can find profiles for me on <a rel="me"
-href="https://social.coop/@phinze">Mastodon</a>,
-[Twitter](https://twitter.com/phinze), [GitHub](https://github.com/phinze),
-[LinkedIn](https://linkedin.com/in/phinze), and many other places. If you see
-`phinze`, it's probably me.
+<p>Elsewhere on the web: <a rel="me" href="https://social.coop/@phinze">Mastodon</a>, <a href="https://bsky.app/profile/phinze.com">Bluesky</a>, <a href="https://github.com/phinze">GitHub</a>, <a href="https://linkedin.com/in/phinze">LinkedIn</a>.</p>

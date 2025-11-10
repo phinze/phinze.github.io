@@ -1,0 +1,256 @@
+/* === RESET & BASE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-text: #222;
+  --color-background: #fff;
+  --color-purple: #5b21b6;
+  --color-border: #000;
+  --color-border-light: #ddd;
+  --color-muted: #666;
+
+  --font-sans: 'Public Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Hack', 'Courier New', monospace;
+  --max-width: 65ch;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-background);
+  padding: 2rem 1rem;
+}
+
+/* === LAYOUT === */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* === TYPOGRAPHY === */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 1rem 0;
+}
+
+/* === LINKS === */
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--color-purple);
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--color-purple);
+}
+
+/* === NAVIGATION === */
+nav {
+  border-bottom: 1px solid var(--color-purple);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  font-family: var(--font-sans);
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: 600;
+}
+
+/* === SITE HEADER === */
+.site-header {
+  margin-bottom: 2rem;
+}
+
+.site-header h1 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.site-header h1 .icon {
+  margin-right: 0.5rem;
+}
+
+.site-header .p-name {
+  margin-left: 0.25rem;
+}
+
+/* === ICONS === */
+.icon {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-logo {
+  background-image: url('/assets/images/logo.png');
+}
+
+.icon-tiger {
+  background-image: url('/assets/images/podium-tiger.png');
+}
+
+.icon-kite {
+  background-image: url('/assets/images/kite-porcupine.png');
+  height: 7rem;
+  margin-top: -3rem;
+}
+
+.icon-adventures {
+  background-image: url('/assets/images/small-adventures.png');
+}
+
+/* === SECTIONS === */
+section {
+  margin-bottom: 4rem;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* === LISTS === */
+.list {
+  list-style: none;
+  border-top: 1px solid var(--color-border-light);
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--color-border-light);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.list-title {
+  flex: 1;
+}
+
+.list-title a {
+  text-decoration: none;
+}
+
+.list-title a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--color-purple);
+}
+
+.list-meta {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* === CODE === */
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+}
+
+pre {
+  overflow-x: auto;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+}
+
+pre code {
+  font-size: 0.875rem;
+}
+
+/* === HORIZONTAL RULES === */
+hr {
+  border: none;
+  border-top: 1px solid var(--color-purple);
+  margin: 2rem 0;
+}
+
+/* === ARTICLE === */
+article h2 {
+  border: none;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+
+article ol, article ul {
+  margin: 1rem 0 1rem 1.5rem;
+}
+
+article li {
+  margin-bottom: 0.5rem;
+}
+
+.post-meta {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  margin-bottom: 2rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* === FOOTER === */
+footer {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-purple);
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+/* === BLOCKQUOTES === */
+blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--color-border-light);
+  color: var(--color-muted);
+}
+
+/* === IMAGES === */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix emoji sizing */
+img.emoji {
+  width: 20px;
+  display: inline;
+}

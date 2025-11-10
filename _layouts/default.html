@@ -9,17 +9,32 @@
     {% endcomment %}
     <script>/**/</script>
 
-    {%- include header.html -%}
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="/" {% if page.title == "index" %}class="active"{% endif %}>Home</a></li>
+          <li><a href="/writing" {% if page.title == "Writing" %}class="active"{% endif %}>Writing</a></li>
+          <li><a href="/speaking" {% if page.title == "Speaking" %}class="active"{% endif %}>Speaking</a></li>
+          <li><a href="/projects" {% if page.title == "Projects" %}class="active"{% endif %}>Projects</a></li>
+        </ul>
+      </nav>
 
-    <main class="page-content {{ page.class }}" aria-label="Content">
-      <div class="wrapper">
+      {%- if page.title == "index" -%}
+      <header class="site-header">
+        <h1>
+          <span class="icon icon-logo"></span>
+          Hi! I'm <span class="p-name">Paul Hinze</span>.
+        </h1>
+      </header>
+      {%- endif -%}
+
+      <main class="page-content {{ page.class }}" aria-label="Content">
         {{ content }}
-      </div>
-    </main>
+      </main>
 
-    {%- include footer.html -%}
+      {%- include footer.html -%}
+    </div>
 
-  </body>
   </body>
 
 </html>

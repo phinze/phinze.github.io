@@ -3,9 +3,7 @@ layout: default
 ---
 <article>
   <h1>{{ page.title | escape }}</h1>
-  <p class="subtitle">{{ page.date | date: "%Y-%m-%d" }}</p>
+  <div class="post-meta">{{ page.date | date: "%Y-%m-%d" }}</div>
 
-  <section>
   {{ content }}
-  </section>
 </article>
