@@ -10,5 +10,13 @@ class: projects
     Projects
   </h2>
 
-  <p>Nothing here yet.</p>
+  <ul class="list">
+    {%- assign sorted_projects = site.projects | sort: "order" -%}
+    {%- for project in sorted_projects -%}
+    <li>
+      <div class="list-title"><a href="{{ project.url | relative_url }}">{{ project.title | escape }}</a></div>
+      <div class="list-meta">{{ project.role | escape }}</div>
+    </li>
+    {%- endfor -%}
+  </ul>
 </section>
